@@ -1,0 +1,6 @@
+@GradeUp_HostAddress = http://localhost:5256
+
+GET {{GradeUp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
