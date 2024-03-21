@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\controllers\\hellocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|d:\\uni\\projects\\gradeup\\backend\\gradeup\\gradeup\\entities\\hello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\entities\\hello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|d:\\uni\\projects\\gradeup\\backend\\gradeup\\gradeup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hello.cs",
+              "DocumentMoniker": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\Entities\\Hello.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Entities\\Hello.cs",
+              "ToolTip": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\Entities\\Hello.cs",
+              "RelativeToolTip": "GradeUp\\Entities\\Hello.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:12:19.878Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +45,14 @@
               "RelativeDocumentMoniker": "GradeUp\\Controllers\\HelloController.cs",
               "ToolTip": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\HelloController.cs",
               "RelativeToolTip": "GradeUp\\Controllers\\HelloController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T12:22:02.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\Program.cs",
               "RelativeDocumentMoniker": "GradeUp\\Program.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "GradeUp\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T12:00:04.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T12:00:04.549Z"
             }
           ]
         }

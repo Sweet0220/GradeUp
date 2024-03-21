@@ -30,3 +30,4 @@ D:\Uni\Projects\GradeUp\Backend\GradeUp\GradeUp\obj\Debug\net8.0\refint\GradeUp.
 D:\Uni\Projects\GradeUp\Backend\GradeUp\GradeUp\obj\Debug\net8.0\GradeUp.pdb
 D:\Uni\Projects\GradeUp\Backend\GradeUp\GradeUp\obj\Debug\net8.0\GradeUp.genruntimeconfig.cache
 D:\Uni\Projects\GradeUp\Backend\GradeUp\GradeUp\obj\Debug\net8.0\ref\GradeUp.dll
+D:\Uni\Projects\GradeUp\Backend\GradeUp\GradeUp\obj\Debug\net8.0\GradeUp.sourcelink.json
