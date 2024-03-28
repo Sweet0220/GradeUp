@@ -1,5 +1,5 @@
 INSERT INTO request(id, id_user1, id_user2, id_subject, accepted) VALUES (1, 2, 1, 3, 1);
-INSERT INTO request(id, id_user1, id_user2, id_subject, accepted) VALUES (2, 9, 10, 1, 0);
+INSERT INTO request(id, id_user1, id_user2, id_subject, accepted) VALUES (2, 9, 10, 1, 1);
 INSERT INTO request(id, id_user1, id_user2, id_subject, accepted) VALUES (3, 2, 4, 2, 0);
 INSERT INTO request(id, id_user1, id_user2, id_subject, accepted) VALUES (4, 1, 2, 5, 1);
 INSERT INTO request(id, id_user1, id_user2, id_subject, accepted) VALUES (5, 6, 5, 7, 0);

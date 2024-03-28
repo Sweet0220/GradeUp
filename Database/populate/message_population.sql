@@ -8,3 +8,4 @@ INSERT INTO message (id, text, id_chat, id_user, hour, send_date) VALUES (7, 'Me
 INSERT INTO message (id, text, id_chat, id_user, hour, send_date) VALUES (8, 'Super! Ramane stabilit.', 8, 10, '21:34', CONVERT(date,'20/03/2024',103)); 
 INSERT INTO message (id, text, id_chat, id_user, hour, send_date) VALUES (9, 'Salut!', 9, 5, '13:12', CONVERT(date,'21/03/2024',103));
 INSERT INTO message (id, text, id_chat, id_user, hour, send_date) VALUES (10, 'Acesta este nr meu, imi poti trimite poza unde nu intelegi: ',10, 7, '19:45', CONVERT(date,'23/03/2024',103));
+
