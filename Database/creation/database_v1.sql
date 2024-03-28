@@ -1,4 +1,4 @@
-CREATE TABLE user (
+CREATE TABLE users (
 	id bigint primary key,
     username varchar(255),
     email varchar(255) unique,
@@ -22,7 +22,7 @@ CREATE TABLE teaching (
 	id bigint primary key,
 	id_user bigint,
     id_subject bigint,
-    FOREIGN KEY (id_user) REFERENCES user(id),
+    FOREIGN KEY (id_user) REFERENCES users(id),
     FOREIGN KEY (id_subject) REFERENCES subject(id)
 );
 
@@ -31,7 +31,7 @@ CREATE TABLE review (
     rating int,
     comment varchar(255),
     id_user bigint,
-    FOREIGN KEY (id_user) REFERENCES user(id)
+    FOREIGN KEY (id_user) REFERENCES users(id)
 );
 
 CREATE TABLE request (
@@ -39,19 +39,19 @@ CREATE TABLE request (
     id_user1 bigint,
     id_user2 bigint,
     id_subject bigint,
-    accepted bool,
-    FOREIGN KEY (id_user1) REFERENCES user(id),
-    FOREIGN KEY (id_user2) REFERENCES user(id),
+    accepted bit,
+    FOREIGN KEY (id_user1) REFERENCES users(id),
+    FOREIGN KEY (id_user2) REFERENCES users(id),
     FOREIGN KEY (id_subject) REFERENCES subject(id),
-    CONSTRAINT UNIQUE (id_user1, id_user2, id_subject)
+    CONSTRAINT Unique_Request UNIQUE (id_user1, id_user2, id_subject)
 );
 
 CREATE TABLE chat (
 	id bigint primary key,
     id_user1 bigint,
     id_user2 bigint,
-    FOREIGN KEY (id_user1) REFERENCES user(id),
-    FOREIGN KEY (id_user2) REFERENCES user(id)
+    FOREIGN KEY (id_user1) REFERENCES users(id),
+    FOREIGN KEY (id_user2) REFERENCES users(id)
 );
 
 CREATE TABLE message (
@@ -61,6 +61,6 @@ CREATE TABLE message (
     id_user bigint,
     hour varchar(255),
     send_date date,
-    FOREIGN KEY (id_user) REFERENCES user(id),
+    FOREIGN KEY (id_user) REFERENCES users(id),
     FOREIGN KEY (id_chat) REFERENCES chat(id)
 );
