@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Merriweather-Regular;
+  src: url(../assets/fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: Merriweather-Bold;
+  src: url(../assets/fonts/Merriweather-Bold.ttf);
+}

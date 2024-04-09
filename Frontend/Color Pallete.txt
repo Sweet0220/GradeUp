@@ -1,0 +1,14 @@
+Crem deschis:
+#FFCDB2
+
+Crem inchis:
+#FFB4A2
+
+Crem mai rosu:
+#E5989B
+
+Crem maro:
+#B5838D
+
+Crem gri:
+#6D6875
