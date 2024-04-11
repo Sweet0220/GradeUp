@@ -1,0 +1,144 @@
+.vertical_flex_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.horizontal_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_container {
+  height: 100%;
+  width: 100%;
+  background-color: #E5989B;
+}
+
+.top_bar {
+  width: 100%;
+  height: 3.2em;
+  background-color: #FFCDB2;
+  column-gap: 4em;
+}
+
+.search_bar_container {
+  height: 75%;
+  width: 25em;
+  column-gap: 0.7em;
+  /*background-color: green;*/
+}
+
+.logo {
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 4px;
+  padding: 2px;
+  background-color: rgba(229,152,155,0.4);
+  background-image: url("../../../assets/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: center center;
+  background-origin: content-box;
+  cursor: pointer;
+}
+
+.search_bar {
+  width: 85%;
+  height: 95%;
+  border-radius: 4px;
+  background-color: rgba(229,152,155,0.4);
+  column-gap: 0.5em;
+}
+
+.search_icon {
+  height: 1.7em;
+  width: 1.7em;
+  background-image: url("../../../assets/images/search.svg");
+  background-size: contain;
+  background-clip: border-box;
+  background-position: center center;
+  background-origin: content-box;
+  opacity: 0.5;
+  filter: invert(46%) sepia(2%) saturate(2268%) hue-rotate(221deg) brightness(86%) contrast(80%);
+}
+
+.search_input {
+  width: 85%;
+  height: 80%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #6e6976;
+}
+
+.button_container {
+  height: 100%;
+  width: 40%;
+}
+
+.top_button {
+  height: 100%;
+  width: 4.5em;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border-bottom: solid 2px transparent;
+  transition: 0.2s;
+}
+
+.top_button:hover {
+  filter: brightness(0%);
+}
+
+.top_button p {
+  font-size: 0.7em;
+  color: #6e6976;
+  user-select: none;
+}
+
+.underline {
+  border-bottom: solid 2px #6e6976;
+}
+
+.top_button_icon {
+  height: 1.9em;
+  width: 1.9em;
+  margin-top: 0.4em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: center center;
+  background-origin: content-box;
+  filter: invert(46%) sepia(2%) saturate(2268%) hue-rotate(221deg) brightness(86%) contrast(80%);
+}
+
+.home {
+  background-image: url("../../../assets/images/home.svg");
+}
+
+.learn {
+  background-image: url("../../../assets/images/learn.svg");
+}
+
+.teach {
+  background-image: url("../../../assets/images/teach.svg");
+}
+
+.messages {
+  background-image: url("../../../assets/images/messages.svg");
+}
+
+.logout {
+  background-image: url("../../../assets/images/logout.svg");
+}
+
+.logout_button {
+  height: 3em;
+  position: absolute;
+  right: 0;
+}

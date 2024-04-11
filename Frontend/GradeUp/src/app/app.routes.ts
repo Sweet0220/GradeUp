@@ -4,5 +4,6 @@ import {MainMenuComponent} from "./main-menu/main-menu.component";
 
 export const routes: Routes = [
   {path: "login", component: LoginPageComponent},
-  {path: "home", component: MainMenuComponent}
+  {path: "menu", component: MainMenuComponent},
+  {path: "", redirectTo: "login", pathMatch: "full"}
 ];
