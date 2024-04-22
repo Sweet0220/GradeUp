@@ -1,4 +1,5 @@
 <div class="body_container vertical_flex_start">
+
   <div class="top_bar horizontal_flex">
     <div class="search_bar_container horizontal_flex">
       <div class="logo"></div>
@@ -8,19 +9,19 @@
       </div>
     </div>
     <div class="button_container horizontal_flex">
-      <div class="top_button vertical_flex_start underline">
+      <div [ngClass]="menuService.homeToggle ? 'top_button vertical_flex_start underline' : 'top_button vertical_flex_start'" (click)="toggleHomeMenu()">
         <div class="top_button_icon home"></div>
         <p>Home</p>
       </div>
-      <div class="top_button vertical_flex_start">
+      <div [ngClass]="menuService.learnToggle ? 'top_button vertical_flex_start underline' : 'top_button vertical_flex_start'" (click)="toggleLearnMenu()">
         <div class="top_button_icon learn"></div>
         <p>Learn</p>
       </div>
-      <div class="top_button vertical_flex_start">
+      <div [ngClass]="menuService.teachToggle ? 'top_button vertical_flex_start underline' : 'top_button vertical_flex_start'" (click)="toggleTeachMenu()">
         <div class="top_button_icon teach"></div>
         <p>Teach</p>
       </div>
-      <div class="top_button vertical_flex_start">
+      <div [ngClass]="menuService.messagesToggle ? 'top_button vertical_flex_start underline' : 'top_button vertical_flex_start'" (click)="toggleMessagesMenu()">
         <div class="top_button_icon messages"></div>
         <p>Messages</p>
       </div>
@@ -30,4 +31,9 @@
       <p>Logout</p>
     </div>
   </div>
+
+  <app-home-menu class="menu horizontal_flex" *ngIf="menuService.homeToggle"></app-home-menu>
+  <app-learn-menu class="menu" *ngIf="menuService.learnToggle"></app-learn-menu>
+  <app-teach-menu class="menu" *ngIf="menuService.teachToggle"></app-teach-menu>
+  <app-messages-menu class="menu" *ngIf="menuService.messagesToggle"></app-messages-menu>
 </div>

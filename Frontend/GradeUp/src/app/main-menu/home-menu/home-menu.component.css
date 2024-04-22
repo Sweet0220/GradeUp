@@ -1,0 +1,79 @@
+.horizontal_flex_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.vertical_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_container {
+  width: 65%;
+  height: 93%;
+  justify-content: space-between;
+}
+
+.content_container p {
+  color: white;
+}
+
+.content_container h3 {
+  color: white;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.profile_container {
+  width: 15em;
+  height: 28em;
+  border-radius: 15px;
+  background-color: #B5838D;
+  justify-content: flex-start;
+}
+
+.news_container {
+  width: 38em;
+  height: 50em;
+  border-radius: 15px;
+  background-color: #FFCDB2;
+}
+
+.suggestions_container {
+  width: 18em;
+  height: 35em;
+  border-radius: 15px;
+  background-color: #B5838D;
+}
+
+.profile_image {
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  height: 5em;
+  width: 5em;
+  background-image: url("../../../../assets/images/account_circle.svg");
+  background-size: contain;
+  background-clip: border-box;
+  background-position: center center;
+  background-origin: content-box;
+  filter: invert(94%) sepia(6%) saturate(0%) hue-rotate(44deg) brightness(106%) contrast(106%);
+}
+
+.profile_details {
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0 0.5em 0 0.5em;
+}
+
+.separator {
+  margin: 1em 0 1em 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+
