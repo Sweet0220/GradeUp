@@ -1,5 +1,5 @@
 CREATE TABLE users (
-	id bigint primary key,
+	id bigint primary key identity,
     username varchar(255),
     email varchar(255) unique,
     password varchar(255),
@@ -9,7 +9,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE subject (
-	id bigint primary key,
+	id bigint primary key identity,
     name varchar(255),
     professor varchar(255),
     year int,
@@ -19,7 +19,7 @@ CREATE TABLE subject (
 );
 
 CREATE TABLE teaching (
-	id bigint primary key,
+	id bigint primary key identity,
 	id_user bigint,
     id_subject bigint,
     FOREIGN KEY (id_user) REFERENCES users(id),
@@ -27,7 +27,7 @@ CREATE TABLE teaching (
 );
 
 CREATE TABLE review (
-	id bigint primary key,
+	id bigint primary key identity,
     rating int,
     comment varchar(255),
     id_user bigint,
@@ -35,7 +35,7 @@ CREATE TABLE review (
 );
 
 CREATE TABLE request (
-	id bigint primary key,
+	id bigint primary key identity,
     id_user1 bigint,
     id_user2 bigint,
     id_subject bigint,
@@ -47,7 +47,7 @@ CREATE TABLE request (
 );
 
 CREATE TABLE chat (
-	id bigint primary key,
+	id bigint primary key identity,
     id_user1 bigint,
     id_user2 bigint,
     FOREIGN KEY (id_user1) REFERENCES users(id),
@@ -55,7 +55,7 @@ CREATE TABLE chat (
 );
 
 CREATE TABLE message (
-	id bigint primary key,
+	id bigint primary key identity,
     text varchar(255),
     id_chat bigint,
     id_user bigint,
