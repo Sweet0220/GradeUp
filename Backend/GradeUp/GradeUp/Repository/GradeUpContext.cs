@@ -13,7 +13,10 @@ namespace GradeUp.Repository
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-JFD73P0;Initial Catalog=gradeup_db;Integrated Security=True;Trust Server Certificate=True");
+                //Connection String Denisa
+                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-JFD73P0;Initial Catalog=gradeup_db;Integrated Security=True;Trust Server Certificate=True");
+                //Connection String Riana
+                optionsBuilder.UseSqlServer("Data Source=IDEAPAD5-RI\\MSSQLSERVER_RIA;Initial Catalog=gradeup_db;Integrated Security=True;Trust Server Certificate=True");
             }
         }
         public DbSet<Users> Users { get; set; }
