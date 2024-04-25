@@ -38,12 +38,12 @@ namespace GradeUp.Repository.Implementation
                 }
                 else
                 {
-                    throw new ArgumentException("user not found");
+                    throw new ArgumentException("User not found.");
                 }
             }
             catch (DbUpdateException ex)
             {
-                throw new Exception("an error while saving", ex);
+                throw new Exception("An error while saving changes in database.", ex);
             }
         }
     }
