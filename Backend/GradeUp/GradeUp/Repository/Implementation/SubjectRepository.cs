@@ -1,4 +1,6 @@
 ﻿using GradeUp.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace GradeUp.Repository.Implementation
 {
@@ -37,6 +39,34 @@ namespace GradeUp.Repository.Implementation
             return subjects;
 
         }
+
+        /*public bool deleteSubjectById(long id)
+        {
+            try
+            {
+                Subject subject = (Subject)context.Subject.Where(s => s.id == id);
+
+                if (subject != null)
+                {
+                    context.Subject.Remove(subject);
+                    context.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                    //throw new ArgumentException("Subject not found!");
+                    
+                }
+
+            }
+
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("error while saving",ex);
+
+            }
+        }*/
 
     }
 }

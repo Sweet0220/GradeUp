@@ -8,5 +8,6 @@ namespace GradeUp.Repository
         Subject getSubjectById(long id);
         List<Subject> getSubjectByYear(int year);
         List<Subject> getSubjectByFaculty(string faculty);
+        //bool deleteSubjectById(long id);
     }
 }

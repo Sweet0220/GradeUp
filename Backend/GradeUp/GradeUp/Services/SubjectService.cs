@@ -11,7 +11,6 @@ namespace GradeUp.Services
         public SubjectService()
         {
             subjectRepository = new SubjectRepository();
-            
         }
 
         public Subject getSubjectByName(string name)
@@ -37,15 +36,8 @@ namespace GradeUp.Services
 
         /*public bool deleteSubjectById(long id)
         {
-            Subject subject = subjectRepository.getSubjectById(id);
+            return subjectRepository.deleteSubjectById(id);
+        }*/
 
-            if(subject != null) 
-            {
-                subjectRepository.Remove(subject);
-
-                return true;
-            }
-        }
-        */
     }
 }

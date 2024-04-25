@@ -72,17 +72,30 @@ namespace GradeUp.Controllers
             return NotFound("Subject not found.");
         }
 
-        /*[HttpDelete("{id}")]
-        public IActionResult deleteSubject(long id)
+        /*[HttpDelete("id/{id}")]
+        public async Task<ActionResult<Subject>> DeleteSubject(int id)
         {
-            bool isDeleted = subjectService.deleteSubjectById(id);
-
-            if (isDeleted)
+            if(id < 1)
             {
-                return Ok("Subject deleted successfully.");
+                return BadRequest();
             }
-            return NotFound("Subject not found or could not be deleted.");
+            
+            try
+            {
+                Subject toDelete = subjectService.getSubjectById(id);
 
+                if (toDelete == null)
+                {
+                    return NotFound($"Subject with Id = {id} not found");
+                }
+
+                subjectService.deleteSubjectById(id);
+                return Ok("The subject was deleted!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }*/
     }
 }
