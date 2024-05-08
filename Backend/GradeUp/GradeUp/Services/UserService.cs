@@ -7,7 +7,7 @@ namespace GradeUp.Services
     public class UserService
     {
         private readonly IUserRepository userRepository;
-        public UserService() 
+        public UserService()
         {
             userRepository = new UserRepository();
         }
@@ -19,14 +19,23 @@ namespace GradeUp.Services
         {
             return userRepository.getUserById(id);
         }
-        public Users getByUsername(string username) 
+        public Users getByUsername(string username)
         {
             return userRepository.getUserByUsername(username);
         }
         public void deleteById(long id)
-        { 
+        {
             userRepository.deleteUserById(id);
         }
+        public void add_user(Users user)
+        { 
+            userRepository.addUser(user);
+        }
+        public void update_user(Users user)
+        {
+            userRepository.updateUser(user);
+        }
+            
 
     }
 }

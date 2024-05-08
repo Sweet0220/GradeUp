@@ -1,4 +1,6 @@
 ﻿using GradeUp.Entities;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace GradeUp.Repository.Implementation
@@ -43,8 +45,57 @@ namespace GradeUp.Repository.Implementation
             }
             catch (DbUpdateException ex)
             {
-                throw new Exception("An error while saving changes in database.", ex);
+                throw new Exception("An error occurred while saving changes in database.", ex);
             }
         }
+
+        public void addUser(Users user)
+        {
+            try
+            {
+                if (user != null)
+                {
+                    _context.Users.Add(user);
+                    _context.SaveChanges();
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid user informations.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while saving the entity changes.", ex);
+            }
+        }
+
+        public void updateUser(Users user)
+        {
+            try
+            {
+                Users userToUpdate = _context.Users.FirstOrDefault(userToUpdate => userToUpdate.id == user.id);
+                if (userToUpdate != null)
+                {
+                    //_context.Users.Update(userToUpdate);
+                    userToUpdate.username = user.username;
+                    userToUpdate.email = user.email;
+                    userToUpdate.password = user.password;
+                    userToUpdate.name = user.name;
+                    userToUpdate.sex = user.sex;
+                    userToUpdate.role = user.role;
+
+                    _context.SaveChanges();
+                }
+                else
+                {
+                    throw new ArgumentException("User information was not updated.");
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("An error occurred while saving changes in database.", ex);
+            }
+        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using GradeUp.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GradeUp.Repository
 {
@@ -8,5 +9,7 @@ namespace GradeUp.Repository
         Users getUserById(long id);
         Users getUserByUsername(string username);
         void deleteUserById(long id);
+        void addUser(Users user);
+        void updateUser(Users user);
     }
 }
