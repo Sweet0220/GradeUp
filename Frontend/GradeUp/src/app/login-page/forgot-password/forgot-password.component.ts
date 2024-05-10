@@ -1,26 +1,22 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-forgot-password',
   standalone: true,
-  templateUrl: './login-page.component.html',
   imports: [],
-  styleUrl: './login-page.component.css'
+  templateUrl: './forgot-password.component.html',
+  styleUrl: './forgot-password.component.css'
 })
-export class LoginComponent {
+export class ForgotPasswordComponent {
   username: string = '';
   password: string = '';
   rememberMe: boolean = false;
-  imagePath: string = "assets/images/logo.svg";
+  imagePath: string = "assets/images/lock.png";
 
   onSubmit(): void {
     console.log('Form submitted');
     console.log('Username:', this.username);
     console.log('Password:', this.password);
-    console.log('Remember Me:', this.rememberMe);
-
+    console.log('Remember Me:', this.rememberMe)
   }
-}
-
-export class LoginPageComponent {
 }

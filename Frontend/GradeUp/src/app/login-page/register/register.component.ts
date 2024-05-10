@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-register',
   standalone: true,
-  templateUrl: './login-page.component.html',
   imports: [],
-  styleUrl: './login-page.component.css'
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css'
 })
-export class LoginComponent {
+export class RegisterComponent {
   username: string = '';
   password: string = '';
   rememberMe: boolean = false;
@@ -20,7 +20,4 @@ export class LoginComponent {
     console.log('Remember Me:', this.rememberMe);
 
   }
-}
-
-export class LoginPageComponent {
 }
