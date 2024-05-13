@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|c:\\facultate\\an 3, semestrul 2\\gradeup\\gradeup\\backend\\gradeup\\gradeup\\repository\\implementation\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|c:\\facultate\\an 3, semestrul 2\\gradeup\\gradeup\\backend\\gradeup\\gradeup\\repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\gradeup\\repository\\implementation\\teachingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\repository\\implementation\\teachingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\gradeup\\repository\\implementation\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\repository\\implementation\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|c:\\facultate\\an 3, semestrul 2\\gradeup\\gradeup\\backend\\gradeup\\gradeup\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\gradeup\\services\\teachingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\services\\teachingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|c:\\facultate\\an 3, semestrul 2\\gradeup\\gradeup\\backend\\gradeup\\gradeup\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\gradeup\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\gradeup\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\gradeup\\controllers\\teachingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77634E03-A976-466E-81CE-0904A4EAFE0D}|GradeUp\\GradeUp.csproj|solutionrelative:gradeup\\controllers\\teachingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequestService.cs",
-              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Services\\RequestService.cs",
-              "RelativeDocumentMoniker": "GradeUp\\Services\\RequestService.cs",
-              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Services\\RequestService.cs",
-              "RelativeToolTip": "GradeUp\\Services\\RequestService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "TeachingService.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Services\\TeachingService.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Services\\TeachingService.cs",
+              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Services\\TeachingService.cs",
+              "RelativeToolTip": "GradeUp\\Services\\TeachingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T09:01:48.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T20:18:18.312Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "GradeUp\\Controllers\\RequestController.cs",
-              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "GradeUp\\Controllers\\RequestController.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAywGsAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T09:00:01.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "RequestRepository.cs",
               "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Repository\\Implementation\\RequestRepository.cs",
               "RelativeDocumentMoniker": "GradeUp\\Repository\\Implementation\\RequestRepository.cs",
               "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Repository\\Implementation\\RequestRepository.cs",
               "RelativeToolTip": "GradeUp\\Repository\\Implementation\\RequestRepository.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAADwv20AAAAAAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:40:17.792Z",
+              "WhenOpened": "2024-05-12T19:24:23.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeachingRepository.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Repository\\Implementation\\TeachingRepository.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Repository\\Implementation\\TeachingRepository.cs",
+              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Repository\\Implementation\\TeachingRepository.cs",
+              "RelativeToolTip": "GradeUp\\Repository\\Implementation\\TeachingRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:08:55.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Repository\\Implementation\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Repository\\Implementation\\UserRepository.cs",
+              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Repository\\Implementation\\UserRepository.cs",
+              "RelativeToolTip": "GradeUp\\Repository\\Implementation\\UserRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwBwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:04:53.061Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Services\\UserService.cs",
+              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Services\\UserService.cs",
+              "RelativeToolTip": "GradeUp\\Services\\UserService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:04:36.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GradeUp\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:03:42.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TeachingController.cs",
+              "DocumentMoniker": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\TeachingController.cs",
+              "RelativeDocumentMoniker": "GradeUp\\Controllers\\TeachingController.cs",
+              "ToolTip": "C:\\Facultate\\An 3, Semestrul 2\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\Controllers\\TeachingController.cs",
+              "RelativeToolTip": "GradeUp\\Controllers\\TeachingController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T15:20:33.55Z"
             }
           ]
         }

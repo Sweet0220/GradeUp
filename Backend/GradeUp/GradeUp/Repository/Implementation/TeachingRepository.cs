@@ -45,6 +45,7 @@ namespace GradeUp.Repository.Implementation
                 throw new Exception("An error occurred while saving the entity changes.", ex);
             }
         }
+   
 
         public void updateTeaching(Teaching teaching)
         {

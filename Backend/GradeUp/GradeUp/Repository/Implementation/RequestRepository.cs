@@ -91,20 +91,14 @@ namespace GradeUp.Repository.Implementation
         {
             try
             {
-                Request requestToDelete1 = _context.Request.FirstOrDefault(r => r.id_user1 == id_user);
-                Request requestToDelete2 = _context.Request.FirstOrDefault(r => r.id_user2 == id_user);
-                if (requestToDelete1 != null)
+                var requestToDelete = _context.Request.Where(r => r.id_user1 == id_user || r.id_user2 == id_user);
+                if (requestToDelete != null)
                 {
-                    _context.Request.Remove(requestToDelete1);
+                    _context.Request.RemoveRange(requestToDelete);
                     _context.SaveChanges();
                 }
                 else
                 {
-                    if(requestToDelete2 != null)
-                    {
-                        _context.Request.Remove(requestToDelete2);
-                        _context.SaveChanges();
-                    }
                     throw new ArgumentException("Request not found.");
                 }
 
