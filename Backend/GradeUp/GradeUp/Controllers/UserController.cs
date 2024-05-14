@@ -69,5 +69,41 @@ namespace GradeUp.Controllers
             
         }
 
+        [HttpPost]
+        public IActionResult addUser(Users user)
+        {
+            try
+            {
+               if (user == null)
+               {
+                    return BadRequest("Invalid user information.");
+               }
+               userService.add_user(user);
+               return Ok("The user was added.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut]
+        public IActionResult updateUser(Users user) 
+        {
+            try
+            {
+                if (user == null)
+                {
+                    return BadRequest("Invalid user information.");
+                }
+                userService.update_user(user);
+                return Ok("The user's information was updated.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
     }
 }

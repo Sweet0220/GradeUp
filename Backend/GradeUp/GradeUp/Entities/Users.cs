@@ -15,6 +15,14 @@
             
         }
 
-
+        public Users(string username, string email, string password, string name, string sex, string role)
+        {
+            this.username = username;
+            this.email = email;
+            this.password = password;
+            this.name = name;
+            this.sex = sex;
+            this.role = role;
+        }
     }
 }
