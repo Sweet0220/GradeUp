@@ -22,5 +22,25 @@ namespace GradeUp.Services
         {
             return messageRepository.getMessageByChatId(id_chat);
         }
+
+        public void addMessage(Message message) 
+        {
+            messageRepository.addMessage(message);
+        }
+
+        public void updateMessage(Message message)
+        {
+            messageRepository.updateMessage(message);
+        }
+
+        public void removeMessage(long id)
+        {
+            messageRepository.deleteMessageById(id);
+        }
+
+        public void deleteMessageByChatId(long id_chat) 
+        {
+            messageRepository.deleteMessageByChatId(id_chat);
+        }
     }
 }

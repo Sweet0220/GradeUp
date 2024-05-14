@@ -2,6 +2,7 @@
 using GradeUp.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 
 namespace GradeUp.Controllers
 {
@@ -72,5 +73,59 @@ namespace GradeUp.Controllers
             return NotFound("Subject not found.");
         }
 
+        [HttpPost]
+        public IActionResult addSubject(Subject subject)
+        {
+            try
+            {
+                if(subject == null)
+                {
+                    return BadRequest("Invalid subject data.");
+                }
+                subjectService.addSubject(subject);
+                return Ok("New subject added!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message); 
+            }
+        }
+
+        [HttpPut]
+        public IActionResult updateSubject(Subject subject) 
+        {
+            try
+            {
+                if (subject == null)
+                {
+                    return BadRequest("Invalid subject data.");
+                }
+                subjectService.updateSubject(subject);
+                return Ok("The subject's data was updated.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("id/{id}")]
+        public IActionResult deleteSubjectById(long id)
+        {
+            try
+            {
+                Subject subject = subjectService.getSubjectById(id);
+                if (subject == null)
+                {
+                    return NotFound("Subject not found.");
+                }
+                subjectService.removeSubject(id);
+                return Ok("The subject chat was deleted.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

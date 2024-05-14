@@ -38,5 +38,74 @@ namespace GradeUp.Controllers
             }
             return NotFound("User's chat not found");
         }
+
+        [HttpPost]
+        public IActionResult addSubject(Message message)
+        {
+            try
+            {
+                if (message == null)
+                {
+                    return BadRequest("Invalid message data.");
+                }
+                messageService.addMessage(message);
+                return Ok("New message added!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut]
+        public IActionResult updateMessaget(Message message)
+        {
+            try
+            {
+                if (message == null)
+                {
+                    return BadRequest("Invalid message data.");
+                }
+                messageService.updateMessage(message);
+                return Ok("The message's data was updated.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("id/{id}")]
+        public IActionResult deleteMessageById(long id)
+        {
+            try
+            {
+                Message message = messageService.getMessageById(id);
+                if (message == null)
+                {
+                    return NotFound("Message not found.");
+                }
+                messageService.removeMessage(id);
+                return Ok("The chosen message was deleted.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("chat/id/{id_chat}")]
+        public IActionResult deleteMessageByChatId(long id_chat)
+        {
+            try
+            {
+                messageService.deleteMessageByChatId(id_chat);
+                return Ok("The chosen message was deleted.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

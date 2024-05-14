@@ -24,8 +24,7 @@ namespace GradeUp.Repository.Implementation
         {
             return context.Subject.FirstOrDefault(s => s.id == id);
         }
-        
-        //de modificat 
+       
 
         public List<Subject> getSubjectByYear(int year)
         {
@@ -40,33 +39,90 @@ namespace GradeUp.Repository.Implementation
 
         }
 
-        /*public bool deleteSubjectById(long id)
+        public void addSubject(Subject subject)
         {
             try
             {
-                Subject subject = (Subject)context.Subject.Where(s => s.id == id);
-
-                if (subject != null)
+                if(subject != null)
                 {
-                    context.Subject.Remove(subject);
+                    context.Subject.Add(subject);
                     context.SaveChanges();
-                    return true;
                 }
                 else
                 {
-                    return false;
-                    //throw new ArgumentException("Subject not found!");
-                    
+                    throw new ArgumentException("Invalid Subject data.");
                 }
-
             }
 
+            catch (Exception ex)
+            {
+                throw new Exception("Error while saving changes.", ex);
+            }
+        }
+
+        public void updateSubject(Subject subject)
+        {
+            try
+            {
+                Subject subjectToUpdate = context.Subject.FirstOrDefault(subjectToUpdate => subjectToUpdate.id == subject.id);
+                if (subjectToUpdate != null)
+                {
+                    /*
+                        public string name { get; set; }
+                        public string professor { get; set; }
+                        public int year { get; set; }
+                        public string faculty { get; set; }
+                        public string university { get; set; }
+                        public int credits { get; set; }
+                    */
+                    subjectToUpdate.name = subject.name;
+                    subjectToUpdate.professor = subject.professor;
+                    subjectToUpdate.year = subject.year;
+                    subjectToUpdate.faculty = subject.faculty;
+                    subjectToUpdate.university = subject.university;
+                    subjectToUpdate.credits = subject.credits;
+                    context.SaveChanges();
+                }
+                else
+                {
+                    throw new ArgumentException("Subject data not updated.");
+                }
+            }
             catch (DbUpdateException ex)
             {
-                throw new Exception("error while saving",ex);
-
+                throw new Exception("Error while saving changes in database.", ex);
             }
-        }*/
+        }
+
+        public void removeSubject(long id)
+        {
+            try
+            {
+                Subject subjectToDelete = context.Subject.FirstOrDefault(s => s.id == id);
+                if (subjectToDelete != null)
+                {
+                    context.Database.ExecuteSqlRaw($"DELETE FROM Teaching WHERE id_subject = {id}");
+                    context.Database.ExecuteSqlRaw($"DELETE FROM Request WHERE id_subject = {id}");
+                    /*List<Teaching> teachingToDelete = context.Teaching.Where(t => t.id_subject == subjectToDelete.id).ToList();
+                    for(int i = 0;i < teachingToDelete.Count; i++)
+                    {
+                        context.Teaching.Remove(teachingToDelete.IndexOf(i));
+                        context.SaveChanges();
+
+                    }*/
+                    context.Subject.Remove(subjectToDelete);
+                    context.SaveChanges();
+                }
+                else
+                {
+                    throw new ArgumentException("Subject not found.");
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("Error while saving changes in database.", ex);
+            }
+        }
 
     }
 }
