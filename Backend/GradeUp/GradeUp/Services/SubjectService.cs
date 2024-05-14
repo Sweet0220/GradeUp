@@ -34,10 +34,20 @@ namespace GradeUp.Services
             return subjectRepository.getSubjectByFaculty(faculty);
         }
 
-        /*public bool deleteSubjectById(long id)
+        public void addSubject(Subject subject)
+        {
+            subjectRepository.addSubject(subject);
+        }
+
+        public void updateSubject(Subject subject)
+        {
+            subjectRepository.updateSubject(subject);
+        }
+
+        public void removeSubject(long id)
         {
             return subjectRepository.deleteSubjectById(id);
-        }*/
+        }
 
     }
 }
