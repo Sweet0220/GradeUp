@@ -1,0 +1,33 @@
+.horizontal_flex_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.vertical_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_container {
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request_container {
+  height: 90%;
+  width: 40%;
+  background-color: #FFCDB2;
+  border-radius: 10px;
+}
+
+.message_container {
+  height: 90%;
+  width: 55%;
+  background-color: #FFCDB2;
+  border-radius: 10px;
+}

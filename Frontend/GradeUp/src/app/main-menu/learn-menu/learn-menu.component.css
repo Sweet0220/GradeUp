@@ -42,6 +42,9 @@
   background-color: rgba(109,104,117, 1);
   border-radius: 10px;
   margin-bottom: 2em;
+  align-items: center;
+  padding: 0.7em;
+  box-sizing: border-box;
 }
 
 .apply_filters_btn {
@@ -51,7 +54,7 @@
   height: 8%;
   background-color: rgba(109,104,117, 0.5);
   border-radius: 10px;
-  margin-top: 12em;
+  margin-top: 5em;
   cursor: pointer;
   transition: all 0.3ms;
 }
@@ -67,4 +70,119 @@
 
 .apply_filters_btn:active {
   background-color: rgba(109,104,117, 1);
+}
+
+.image {
+  height: 2em;
+  width: 2em;
+}
+
+.vertical_separator {
+  height: 70%;
+  width: 1px;
+  background-color: #E8EAED;
+  margin: 0 0.6em 0 0.3em;
+}
+
+.select_box {
+  height: 80%;
+  width: 85%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #E8EAED;
+  font-size: 1.05em;
+  cursor: pointer;
+  transition: all 0.3ms;
+  border-radius: 4px;
+}
+
+.select_box:hover{
+  background-color: rgba(232,234,237,0.1);
+}
+
+.search_container h3 {
+  margin-bottom: 3em;
+  color: #6D6875;
+  text-decoration: none;
+}
+
+.request_container {
+  height: 90%;
+  width: 60%;
+  /*background-color: #FFCDB2;*/
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.request_button {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: solid 3px #E8EAED;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3ms;
+}
+
+.request_button img {
+  transition: all 0.3ms;
+  height: 40px;
+  width: 40px;
+  user-select: none;
+}
+
+.request_button:hover {
+  background-color: rgba(232,234,237,0.3);
+}
+
+.request_button:active {
+  background-color: rgba(232,234,237,1);
+}
+
+.request_button:active img {
+  filter: invert(47%) sepia(6%) saturate(681%) hue-rotate(221deg) brightness(86%) contrast(91%);
+}
+
+.image_container {
+  width: 50%;
+  height: 80%;
+  background-color: #231f20;
+  border-radius: 10px;
+  justify-content: flex-end;
+  align-items: start;
+  box-sizing: border-box;
+  padding: 1.5em;
+  position: relative;
+}
+
+.image_container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  border: none;
+  outline: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.name {
+  font-size: 1.3em;
+  color: #E8EAED;
+  z-index: 1;
+}
+
+.description {
+  font-size: 1em;
+  color: #E8EAED;
+  z-index: 1;
+}
+
+option {
+  color: #6D6875;
 }

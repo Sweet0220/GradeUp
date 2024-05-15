@@ -1,16 +1,64 @@
 <div class="horizontal_flex_start content_container">
   <div class="search_container vertical_flex">
+    <h3>Find someone to teach you!</h3>
     <div class="search_box horizontal_flex_start">
-
+      <img src="assets/images/university.svg" alt="uni" class="image">
+      <div class="vertical_separator"></div>
+      <select class="select_box">
+        <option value="" disabled selected>University</option>
+      </select>
     </div>
     <div class="search_box horizontal_flex_start">
-
+      <img src="assets/images/year.svg" alt="uni" class="image">
+      <div class="vertical_separator"></div>
+      <select class="select_box">
+        <option value="" disabled selected>Year</option>
+        <option value="1">Year I</option>
+        <option value="2">Year II</option>
+        <option value="3">Year III</option>
+        <option value="4">Year IV</option>
+      </select>
     </div>
     <div class="search_box horizontal_flex_start">
-
+      <img src="assets/images/subject.svg" alt="uni" class="image">
+      <div class="vertical_separator"></div>
+      <select class="select_box">
+        <option value="" disabled selected>Subject</option>
+      </select>
+    </div>
+    <div class="search_box horizontal_flex_start">
+      <img src="assets/images/professor.svg" alt="uni" class="image">
+      <div class="vertical_separator"></div>
+      <select class="select_box">
+        <option value="" disabled selected>Professor</option>
+      </select>
+    </div>
+    <div class="search_box horizontal_flex_start">
+      <img src="assets/images/gender.svg" alt="uni" class="image">
+      <div class="vertical_separator"></div>
+      <select class="select_box">
+        <option value="" disabled selected>Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Any">Any</option>
+      </select>
     </div>
     <div class="apply_filters_btn vertical_flex">
-      <p>SEARCH</p>
+      <p>APPLY FILTERS</p>
+    </div>
+  </div>
+
+  <div class="request_container horizontal_flex_start">
+    <div class="request_button vertical_flex">
+      <img src="assets/images/x.svg" alt="uni" class="image">
+    </div>
+    <div class="image_container vertical_flex">
+      <img [src]="currentImage" alt="">
+      <p class="name">{{currentName}}</p>
+      <p class="description">{{description}}</p>
+    </div>
+    <div class="request_button vertical_flex">
+      <img src="assets/images/heart.svg" alt="">
     </div>
   </div>
 </div>

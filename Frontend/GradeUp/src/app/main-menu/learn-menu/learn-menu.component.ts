@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './learn-menu.component.css'
 })
 export class LearnMenuComponent {
-
+  public currentImage: string = "assets/images/pictures/girls/girl1.jpg";
+  public currentName: string = "DEMO NAME"
+  public description: string = "DEMO DESCRIPTION"
 }
