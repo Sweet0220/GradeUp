@@ -4,23 +4,32 @@
       <img [src]="imagePath" alt="GradeUp Logo">
       <label>GradeUP</label>
     </div>
+    <div class="chenar1">
     <form>
       <input type="text" id="username" name="username" placeholder="Introduceți un username">
       <input type="text" id="email" name="email" placeholder="Introduceți adresa de email">
       <input type="password" id="password" name="password" placeholder="Introduceți parola">
-    </form>
-
-<label>Selectati genul:</label>
+      <label>Selectati genul:</label>
       <select class="option-list">
         <option class="option">Masculin</option>
         <option class="option">Feminin</option>
       </select>
-      <div class="remember-me">
-        <label> <input type="checkbox">Ține-mă minte</label>
+    </form>
+    </div>
+    <div class="chenar2">
+    <label>Introdu o fotografie de profil</label>
+      <div class="image">
+        <img [src]="imageUrl" id="profile-pic">
+        <label for="input-file">Update image</label>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" (change)="onFileSelected($event)">
       </div>
 
-      <button type="submit">INAINTE</button>
-
+    </div>
+    <div class="remember-me">
+      <label> <input type="checkbox">Ține-mă minte</label>
+    </div>
+    <button type="submit">INAINTE</button>
+    <a href="http://localhost:4200/login">Ai deja cont? Inapoi la conectare</a>
   </div>
 </div>
 
