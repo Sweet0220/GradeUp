@@ -2,7 +2,7 @@
 
 namespace GradeUp.Repository
 {
-    public interface ISubjectRepository
+    public interface ISubjectRepository 
     {
         Subject getSubjectByName(string name);
         Subject getSubjectById(long id);
@@ -10,6 +10,6 @@ namespace GradeUp.Repository
         List<Subject> getSubjectByFaculty(string faculty);
         void addSubject(Subject subject);
         void updateSubject(Subject subject);
-        void removeSubject(long id);
+        void deleteSubjectById(long id);
     }
 }

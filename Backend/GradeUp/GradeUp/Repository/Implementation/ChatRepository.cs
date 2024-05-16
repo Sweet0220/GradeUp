@@ -56,7 +56,7 @@ namespace GradeUp.Repository.Implementation
             }
         }
 
-        public void removeChat(long id)
+        public void deleteChatById(long id)
         {
             try
             {
@@ -76,6 +76,7 @@ namespace GradeUp.Repository.Implementation
                 throw new Exception("Error while saving changes in database.", ex);
             }
         }
+
 
         public void deleteChatByUserId(long id_user)
         {
@@ -110,4 +111,4 @@ namespace GradeUp.Repository.Implementation
 
 
 }
-}
+

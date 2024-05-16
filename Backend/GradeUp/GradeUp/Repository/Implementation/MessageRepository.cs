@@ -77,7 +77,7 @@ namespace GradeUp.Repository.Implementation
             }
         }
 
-        public void removeMessage(long id) 
+        public void deleteMessageById(long id) 
         {
             try
             {

@@ -13,8 +13,4 @@
     <PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="8.102.2.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>

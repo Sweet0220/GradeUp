@@ -46,7 +46,7 @@ namespace GradeUp.Services
 
         public void removeSubject(long id)
         {
-            return subjectRepository.deleteSubjectById(id);
+            subjectRepository.deleteSubjectById(id);
         }
 
     }

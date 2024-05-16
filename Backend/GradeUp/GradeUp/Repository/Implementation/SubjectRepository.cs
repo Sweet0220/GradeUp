@@ -94,7 +94,7 @@ namespace GradeUp.Repository.Implementation
             }
         }
 
-        public void removeSubject(long id)
+        public void deleteSubjectById(long id)
         {
             try
             {
