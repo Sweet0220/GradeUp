@@ -1,0 +1,10 @@
+INSERT INTO teaching (id_user, id_subject) VALUES (3, 5);
+INSERT INTO teaching (id_user, id_subject) VALUES (4, 3);
+INSERT INTO teaching (id_user, id_subject) VALUES (1, 10);
+INSERT INTO teaching (id_user, id_subject) VALUES (5, 8);
+INSERT INTO teaching (id_user, id_subject) VALUES (2, 2);
+INSERT INTO teaching (id_user, id_subject) VALUES (2, 3);
+INSERT INTO teaching (id_user, id_subject) VALUES (8, 6);
+INSERT INTO teaching (id_user, id_subject) VALUES (1, 9);
+INSERT INTO teaching (id_user, id_subject) VALUES (9, 4);
+INSERT INTO teaching (id_user, id_subject) VALUES (6, 1);

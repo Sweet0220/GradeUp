@@ -1,0 +1,10 @@
+INSERT INTO review(rating,comment,id_user) Values (3,'Nu mi-a placut atata de mult materia, deci nici profa',1);
+INSERT INTO review(rating,comment,id_user) Values (4,'Mi-a placut de el',2);
+INSERT INTO review(rating,comment,id_user) Values (5,'O femeie TOP',3);
+INSERT INTO review(rating,comment,id_user) Values (2,'N-am inteles nimic',4);
+INSERT INTO review(rating,comment,id_user) Values (3,'Nu m-o lasat sa latru la ore',5);
+INSERT INTO review(rating,comment,id_user) Values (1,'Nu a mai iesit cu mine',6);
+INSERT INTO review(rating,comment,id_user) Values (3,'Ca patrunjelu in supa',7);
+INSERT INTO review(rating,comment,id_user) Values (4,'A fost ok da tot am picat',8);
+INSERT INTO review(rating,comment,id_user) Values (3,'Nu tare am invatat nimic',9);
+INSERT INTO review(rating,comment,id_user) Values (1,'Nu i-o placut de mn ca fumez',10);

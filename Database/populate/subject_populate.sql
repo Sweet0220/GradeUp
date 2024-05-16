@@ -1,0 +1,10 @@
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Programarea Calculatoarelor','Costin Julia',1,'Automatica si Calculatoare','UTCN',5);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('BCE','Grama Alin',1,'Automatica si Calculatoare','UTCN',4);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Electrotehnica','Tzanca Uraganu',1,'Automatica si Calculatoare','UTCN',5);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Matematici Speciale in inginerie','Mitrea Peter',1,'Automatica si Calculatoare','UTCN',4);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Proiectarea algoritmilor','Melenti Matilda',2,'Automatica si Calculatoare','UTCN',5);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Teoria Sistemelor I','Dobra Mircea',2,'Automatica si Calculatoare','UTCN',5);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Teoria Sistemelor II','Dobra Vlad Mihai(ly)',3,'Automatica si Calculatoare','UTCN',5);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Identificarea Sistemelor','Dobra Petru',3,'Automatica si Calculatoare','UTCN',4);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Algebra liniara si geometrie analitica','Vosy Popp',1,'Automatica si Calculatoare','UTCN',5);
+INSERT INTO subject(name,professor,year,faculty,university,credits) Values('Analiza matematica','Rosca Alina',1,'Automatica si Calculatoare','UTCN',5);
