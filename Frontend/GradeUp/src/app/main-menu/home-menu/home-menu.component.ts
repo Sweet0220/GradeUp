@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-menu',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './home-menu.component.html',
   styleUrl: './home-menu.component.css'
 })
-export class HomeMenuComponent {
-
+export class HomeMenuComponent implements OnInit {
+  public user: any = "";
+  ngOnInit() {
+    this.user = localStorage.getItem("user");
+  }
 }
