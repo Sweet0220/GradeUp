@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {LoginService} from "../../services/login.service";
 import {Router} from "@angular/router";
+import {User} from "../../entity/user";
 
 @Component({
   selector: 'app-login',
@@ -24,7 +25,12 @@ export class LoginComponent {
     this.email = emailInput.value
     this.password = passwordInput.value
     this.loginService.login(this.email, this.password).subscribe(response => {
-      localStorage.setItem("user", response)
+      let user: any = response as User
+      console.log(user)
+      let json = JSON.stringify(user)
+      console.log(json)
+      localStorage.setItem("user", json)
+      console.log(localStorage.getItem("user"))
       this.router.navigateByUrl("home")
     },
       error => {
