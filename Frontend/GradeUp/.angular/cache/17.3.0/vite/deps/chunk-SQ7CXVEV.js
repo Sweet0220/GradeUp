@@ -1,85 +1,50 @@
 import {
-  CommonModule,
   DOCUMENT,
-  DomAdapter,
-  PLATFORM_BROWSER_ID,
   XhrFactory,
-  getDOM,
   isPlatformServer,
+<<<<<<<< HEAD:Frontend/GradeUp/.angular/cache/17.3.0/vite/deps/chunk-STVVZBLJ.js
   parseCookieValue,
   setRootDomAdapter
 } from "./chunk-S2SVBZVA.js";
+========
+  parseCookieValue
+} from "./chunk-7NSHSUPE.js";
+>>>>>>>> frontend/login-functionality:Frontend/GradeUp/.angular/cache/17.3.0/vite/deps/chunk-SQ7CXVEV.js
 import {
   APP_BOOTSTRAP_LISTENER,
-  APP_ID,
-  ApplicationModule,
   ApplicationRef,
-  CSP_NONCE,
   Console,
-  ENVIRONMENT_INITIALIZER,
   EnvironmentInjector,
-  ErrorHandler,
-  INJECTOR_SCOPE,
   Inject,
   Injectable,
   InjectionToken,
   NgModule,
   NgZone,
   Observable,
-  Optional,
   PLATFORM_ID,
-  PLATFORM_INITIALIZER,
   PendingTasks,
-  RendererFactory2,
-  RendererStyleFlags2,
   RuntimeError,
-  SecurityContext,
-  SkipSelf,
-  TESTABILITY,
-  TESTABILITY_GETTER,
-  Testability,
-  TestabilityRegistry,
   TransferState,
-  Version,
-  ViewEncapsulation$1,
-  XSS_SECURITY_URL,
   __async,
   __objRest,
-  __spreadProps,
   __spreadValues,
-  _global,
-  _sanitizeHtml,
-  _sanitizeUrl,
-  allowSanitizationBypassAndThrow,
-  bypassSanitizationTrustHtml,
-  bypassSanitizationTrustResourceUrl,
-  bypassSanitizationTrustScript,
-  bypassSanitizationTrustStyle,
-  bypassSanitizationTrustUrl,
   concatMap,
-  createPlatformFactory,
   filter,
   finalize,
   formatRuntimeError,
-  forwardRef,
   from,
   inject,
-  internalCreateApplication,
   makeEnvironmentProviders,
   makeStateKey,
   map,
   of,
   performanceMarkFeature,
-  platformCore,
   runInInjectionContext,
   setClassMetadata,
-  setDocument,
   switchMap,
   tap,
   truncateMiddle,
-  unwrapSafeValue,
   whenStable,
-  withDomHydration,
   ɵɵdefineInjectable,
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
@@ -561,6 +526,11 @@ var HttpParams = class _HttpParams {
       });
       this.cloneFrom = this.updates = null;
     }
+  }
+};
+var HttpContextToken = class {
+  constructor(defaultValue) {
+    this.defaultValue = defaultValue;
   }
 };
 var HttpContext = class {
@@ -1417,9 +1387,9 @@ function jsonpCallbackContext() {
   return {};
 }
 var _JsonpClientBackend = class _JsonpClientBackend {
-  constructor(callbackMap, document2) {
+  constructor(callbackMap, document) {
     this.callbackMap = callbackMap;
-    this.document = document2;
+    this.document = document;
     this.resolvedPromise = Promise.resolve();
   }
   /**
@@ -1917,6 +1887,15 @@ function provideHttpClient(...features) {
   }
   return makeEnvironmentProviders(providers);
 }
+function withInterceptors(interceptorFns) {
+  return makeHttpFeature(HttpFeatureKind.Interceptors, interceptorFns.map((interceptorFn) => {
+    return {
+      provide: HTTP_INTERCEPTOR_FNS,
+      useValue: interceptorFn,
+      multi: true
+    };
+  }));
+}
 var LEGACY_INTERCEPTOR_FN = new InjectionToken(ngDevMode ? "LEGACY_INTERCEPTOR_FN" : "");
 function withInterceptorsFromDi() {
   return makeHttpFeature(HttpFeatureKind.LegacyInterceptors, [{
@@ -1961,6 +1940,33 @@ function withJsonpSupport() {
     provide: HTTP_INTERCEPTOR_FNS,
     useValue: jsonpInterceptorFn,
     multi: true
+  }]);
+}
+function withRequestsMadeViaParent() {
+  return makeHttpFeature(HttpFeatureKind.RequestsMadeViaParent, [{
+    provide: HttpBackend,
+    useFactory: () => {
+      const handlerFromParent = inject(HttpHandler, {
+        skipSelf: true,
+        optional: true
+      });
+      if (ngDevMode && handlerFromParent === null) {
+        throw new Error("withRequestsMadeViaParent() can only be used when the parent injector also configures HttpClient");
+      }
+      return handlerFromParent;
+    }
+  }]);
+}
+function withFetch() {
+  if ((typeof ngDevMode === "undefined" || ngDevMode) && typeof fetch !== "function") {
+    throw new Error("The `withFetch` feature of HttpClient requires the `fetch` API to be available. If you run the code in a Node environment, make sure you use Node v18.10 or later.");
+  }
+  return makeHttpFeature(HttpFeatureKind.Fetch, [FetchBackend, {
+    provide: HttpBackend,
+    useExisting: FetchBackend
+  }, {
+    provide: PRIMARY_HTTP_BACKEND,
+    useExisting: FetchBackend
   }]);
 }
 var _HttpClientXsrfModule = class _HttpClientXsrfModule {
@@ -2080,7 +2086,7 @@ var BODY = "b";
 var HEADERS = "h";
 var STATUS = "s";
 var STATUS_TEXT = "st";
-var URL2 = "u";
+var URL = "u";
 var RESPONSE_TYPE = "rt";
 var CACHE_OPTIONS = new InjectionToken(ngDevMode ? "HTTP_TRANSFER_STATE_CACHE_OPTIONS" : "");
 var ALLOWED_METHODS = ["GET", "HEAD"];
@@ -2113,7 +2119,7 @@ function transferCacheInterceptorFn(req, next) {
       [HEADERS]: httpHeaders,
       [STATUS]: status,
       [STATUS_TEXT]: statusText,
-      [URL2]: url
+      [URL]: url
     } = response;
     let body = undecodedBody;
     switch (responseType) {
@@ -2143,7 +2149,7 @@ function transferCacheInterceptorFn(req, next) {
         [HEADERS]: getFilteredHeaders(event.headers, headersToInclude),
         [STATUS]: event.status,
         [STATUS_TEXT]: event.statusText,
-        [URL2]: event.url || "",
+        [URL]: event.url || "",
         [RESPONSE_TYPE]: req.responseType
       });
     }
