@@ -6,6 +6,7 @@
       <div class="vertical_separator"></div>
       <select class="select_box">
         <option value="" disabled selected>University</option>
+        <option *ngFor="let uni of uniList" value="{{uni}}">{{uni}}</option>
       </select>
     </div>
     <div class="search_box horizontal_flex_start">
@@ -13,10 +14,7 @@
       <div class="vertical_separator"></div>
       <select class="select_box">
         <option value="" disabled selected>Year</option>
-        <option value="1">Year I</option>
-        <option value="2">Year II</option>
-        <option value="3">Year III</option>
-        <option value="4">Year IV</option>
+        <option *ngFor="let year of yearList" value="{{year}}">{{year}}</option>
       </select>
     </div>
     <div class="search_box horizontal_flex_start">
@@ -24,6 +22,7 @@
       <div class="vertical_separator"></div>
       <select class="select_box">
         <option value="" disabled selected>Subject</option>
+        <option *ngFor="let name of subjectNameList" value="{{name}}">{{name}}</option>
       </select>
     </div>
     <div class="search_box horizontal_flex_start">
@@ -31,6 +30,7 @@
       <div class="vertical_separator"></div>
       <select class="select_box">
         <option value="" disabled selected>Professor</option>
+        <option *ngFor="let prof of professorList" value="{{prof}}">{{prof}}</option>
       </select>
     </div>
     <div class="search_box horizontal_flex_start">
@@ -48,7 +48,7 @@
     </div>
   </div>
 
-  <div class="request_container horizontal_flex_start">
+  <div class="request_container horizontal_flex_start" *ngIf="toggleRequests">
     <div class="request_button vertical_flex">
       <img src="assets/images/x.svg" alt="uni" class="image">
     </div>

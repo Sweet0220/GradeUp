@@ -13,6 +13,11 @@ namespace GradeUp.Services
             subjectRepository = new SubjectRepository();
         }
 
+        public List<Subject> getAll() 
+        {
+            return subjectRepository.getAll();
+        }
+
         public Subject getSubjectByName(string name)
         {
             return subjectRepository.getSubjectByName(name);

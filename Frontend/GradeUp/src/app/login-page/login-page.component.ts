@@ -26,11 +26,8 @@ export class LoginComponent {
     this.password = passwordInput.value
     this.loginService.login(this.email, this.password).subscribe(response => {
       let user: any = response as User
-      console.log(user)
       let json = JSON.stringify(user)
-      console.log(json)
       localStorage.setItem("user", json)
-      console.log(localStorage.getItem("user"))
       this.router.navigateByUrl("home")
     },
       error => {

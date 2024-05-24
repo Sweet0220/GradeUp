@@ -124,5 +124,9 @@ namespace GradeUp.Repository.Implementation
             }
         }
 
+        public List<Subject> getAll()
+        {
+            return context.Subject.ToList();
+        }
     }
 }

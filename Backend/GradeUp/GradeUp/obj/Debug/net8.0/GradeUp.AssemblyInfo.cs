@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GradeUp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f005466f6fc9914a4064b3f768a1299fa9ea1e0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec50cd175fc527f6b9ab70602dc2d4414cedafbf")]
 [assembly: System.Reflection.AssemblyProductAttribute("GradeUp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GradeUp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

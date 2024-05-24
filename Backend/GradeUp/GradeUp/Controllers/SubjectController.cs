@@ -17,6 +17,21 @@ namespace GradeUp.Controllers
             subjectService = new SubjectService();
         }
 
+        [HttpGet]
+        public IActionResult getAll() 
+        {
+            List<Subject> subjects = subjectService.getAll();
+            if (subjects != null)
+            {
+                if (subjects.Count == 0)
+                {
+                    return NoContent();
+                }
+                return Ok(subjects);
+            }
+            return NotFound("Subject is not teached in the year selected.");
+        }
+
         [HttpGet("name/{name}")]
         public IActionResult getSubjectByName(string name)
         {

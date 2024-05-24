@@ -2,14 +2,8 @@ import {
   DOCUMENT,
   XhrFactory,
   isPlatformServer,
-<<<<<<<< HEAD:Frontend/GradeUp/.angular/cache/17.3.0/vite/deps/chunk-STVVZBLJ.js
-  parseCookieValue,
-  setRootDomAdapter
-} from "./chunk-S2SVBZVA.js";
-========
   parseCookieValue
 } from "./chunk-7NSHSUPE.js";
->>>>>>>> frontend/login-functionality:Frontend/GradeUp/.angular/cache/17.3.0/vite/deps/chunk-SQ7CXVEV.js
 import {
   APP_BOOTSTRAP_LISTENER,
   ApplicationRef,
@@ -49,7 +43,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-S75VYUAB.js";
+} from "./chunk-YW2JQ5US.js";
 
 // node_modules/@angular/common/fesm2022/http.mjs
 var HttpHandler = class {
@@ -2288,8 +2282,4 @@ export {
    * License: MIT
    *)
 */
-<<<<<<<< HEAD:Frontend/GradeUp/.angular/cache/17.3.0/vite/deps/chunk-STVVZBLJ.js
-//# sourceMappingURL=chunk-STVVZBLJ.js.map
-========
 //# sourceMappingURL=chunk-SQ7CXVEV.js.map
->>>>>>>> frontend/login-functionality:Frontend/GradeUp/.angular/cache/17.3.0/vite/deps/chunk-SQ7CXVEV.js

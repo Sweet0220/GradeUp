@@ -12,8 +12,6 @@ export class HomeMenuComponent implements OnInit {
   public user: any = "";
   ngOnInit() {
     const json: any = localStorage.getItem("user") ?? {};
-    console.log(json)
     this.user = JSON.parse(json) as User
-    console.log(this.user)
   }
 }
