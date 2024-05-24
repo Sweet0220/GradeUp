@@ -9,7 +9,6 @@
   align-items: center;
 }
 .logo {
-  margin-top: 10px;
   text-align: center;
   font-size: 30px;
   font-family: Courier New;
@@ -146,6 +145,14 @@ input[type="file"]{
   padding: 30px;
   border-radius: 10px;
   border: 2px solid black;
+}
+
+.gender-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 

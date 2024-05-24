@@ -5,6 +5,7 @@ import {LearnMenuComponent} from "./learn-menu/learn-menu.component";
 import {NgClass, NgIf} from "@angular/common";
 import {TeachMenuComponent} from "./teach-menu/teach-menu.component";
 import {MessagesMenuComponent} from "./messages-menu/messages-menu.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-main-menu',
@@ -21,7 +22,7 @@ import {MessagesMenuComponent} from "./messages-menu/messages-menu.component";
   styleUrl: './main-menu.component.css'
 })
 export class MainMenuComponent {
-  constructor(protected menuService: MenuService) {
+  constructor(protected menuService: MenuService, private router: Router) {
   }
 
   toggleHomeMenu() {
@@ -50,6 +51,11 @@ export class MainMenuComponent {
     this.menuService.learnToggle = false;
     this.menuService.teachToggle = false;
     this.menuService.messagesToggle = true;
+  }
+
+  public logout() {
+    localStorage.setItem("user", "");
+    this.router.navigateByUrl("/login");
   }
 
 

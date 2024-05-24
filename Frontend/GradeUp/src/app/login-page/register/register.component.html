@@ -9,11 +9,14 @@
       <input type="text" id="username" name="username" placeholder="Introduceți un username">
       <input type="text" id="email" name="email" placeholder="Introduceți adresa de email">
       <input type="password" id="password" name="password" placeholder="Introduceți parola">
-      <label>Selectati genul:</label>
-      <select class="option-list">
-        <option class="option">Masculin</option>
-        <option class="option">Feminin</option>
-      </select>
+      <input type="text" id="name" name="name" placeholder="Introduceți numele si prenumele">
+      <div class="gender-container">
+        <label>Selectati genul:</label>
+        <select class="option-list" id="gender-select">
+          <option class="option">Masculin</option>
+          <option class="option">Feminin</option>
+        </select>
+      </div>
     </form>
     </div>
     <div class="chenar2">
@@ -25,10 +28,7 @@
       </div>
 
     </div>
-    <div class="remember-me">
-      <label> <input type="checkbox">Ține-mă minte</label>
-    </div>
-    <button type="submit">INAINTE</button>
+    <button type="submit" style="margin-top: 10px;" (click)="registerUser()">INAINTE</button>
     <a href="http://localhost:4200/login">Ai deja cont? Inapoi la conectare</a>
   </div>
 </div>
