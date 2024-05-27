@@ -8,108 +8,34 @@
         <div class="learn-list">
           <p>Learn</p>
           <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
           </div>
-          <div class = "learn-chenar">
+          <div *ngFor="let item of items" class="learn-chenar">
             <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
+              <img [src]="item.image">
               <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
+                <h3>{{item.name}}</h3>
+                <p>{{item.subject}}</p>
               </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
-          </div>
-          <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
-          </div>
-          <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
-          </div>
-          <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
-          </div>
-          <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
-          </div>
-          <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
-            </div>
-          </div>
-          <div class = "learn-chenar">
-            <div class="learn-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-              <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
-              </div>
-              <button class="da"></button>
-              <button class="nu"></button>
+              <button class="da" (click)="handleYes(item)"></button>
+              <button class="nu" (click)="handleNo(item)"></button>
             </div>
           </div>
         </div>
       </div>
-
       <div class="chenar2 vertical_flex">
         <div class="teach-list">
           <p>Teach</p>
           <div class="teach-chenar">
+          </div>
+          <div *ngFor="let item of itemsteach" class="teach-chenar">
             <div class="teach-container horizontal_flex_start">
-              <img src="../../../assets/images/pictures/girl1.jpg" alt="">
+              <img [src]="item.image">
               <div class="nume-materie">
-                <h3>Nume_persoana</h3>
-                <p>Materie</p>
+                <h3>{{item.name}}</h3>
+                <p>{{item.subject}}</p>
               </div>
-              <button class="da"></button>
-              <button class="nu"></button>
+              <button class="da" (click)="handleYesTeach(item)"></button>
+              <button class="nu" (click)="handleNoTeach(item)"></button>
             </div>
           </div>
         </div>
@@ -125,60 +51,18 @@
       <div class="chat_list vertical_flex">
         <p>Your chats</p>
         <div class="chat_list_scrollable vertical_flex">
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
+          <div class="chat_strip horizontal_flex_start" *ngFor="let item of acceptedItem">
+            <img src="{{item.image}}">
             <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
+              <h3>{{item.name}}</h3>
+              <p>{{item.subject}}</p>
             </div>
           </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
+          <div class="chat_strip horizontal_flex_start" *ngFor="let item of acceptedSteach">
+            <img src="{{item.image}}">
             <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-            <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-            <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-            <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-            <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-            <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="chat_strip horizontal_flex_start">
-            <img src="../../../assets/images/pictures/girl1.jpg" alt="">
-            <div class="chat_strip_text_container vertical_flex">
-              <h3>DEMO NAME</h3>
-              <p>DEMO DESCRIPTION</p>
+              <h3>{{item.name}}</h3>
+              <p>{{item.subject}}</p>
             </div>
           </div>
         </div>
@@ -186,22 +70,22 @@
       <div class="chat vertical_flex">
         <div class="chat_screen vertical_flex">
           <div class="user_message">
-            <p>ochjsajkcsalkj clksajcosalckjaslcjlksa</p>
+            <p>Hey</p>
           </div>
           <div class="user_message">
-            <p>acsackjsah</p>
+            <p>Oare ma poti ajuta sa trec examenul?</p>
           </div>
           <div class="receiver_message">
-            <p>csacsa</p>
+            <p>Hey</p>
           </div>
           <div class="receiver_message">
-            <p>casiucsam,kchsjakcksahk</p>
+            <p>Sigur ca da!</p>
           </div>
           <div class="user_message">
-            <p>kjchasjkijclksaj</p>
+            <p>Am vazut ca esti si draguta ʕ·͡ᴥ·ʔ﻿	| (• ◡•)|</p>
           </div>
           <div class="receiver_message">
-            <p>ckijahsjcskackjsack jhsaiucojvichxvixch</p>
+            <p>Vai Merci mult, dar hai sa ramanem la invatat	| (• ◡•)| (ノ ͡° ͜ʖ ͡°ノ) ︵ ( ͜。 ͡ʖ ͜。)</p>
           </div>
         </div>
         <div class="bottom_bar horizontal_flex_start">

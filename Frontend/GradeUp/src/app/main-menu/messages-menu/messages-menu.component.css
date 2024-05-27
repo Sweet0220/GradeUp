@@ -72,6 +72,7 @@
   row-gap: 0.3em;
   flex-wrap: nowrap;
   overflow-y: scroll;
+  justify-content: start;
 }
 
 .chat_list_scrollable::-webkit-scrollbar {
@@ -247,12 +248,15 @@
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 .da:hover{
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
 .nu{
+  flex-direction: row-reverse;
   margin-left: 10px;
   background-image: url('/assets/nu.jpg');
   background-size: cover;
@@ -265,10 +269,10 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  justify-content: flex-end;
 }
 .nu:hover{
   background-color: rgba(0, 0, 0, 0.2);
@@ -302,7 +306,7 @@
   display: block;
 }
 .learn-container buttons{
-  margin-right: 10px;
+  justify-content: flex-end;
 }
 .nume-materie{
   margin-left: 5px;

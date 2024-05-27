@@ -2,7 +2,7 @@
   <div class="teach">
     <form>
     <label>Selectati facultatea:</label>
-    <select class="option-list-fac">
+    <select class="option-list-fac" id="option-fac">
       <option class="option">Facultatea de Arhitectură și Urbanism</option>
       <option class="option">Facultatea de Automatică și Calculatoare</option>
       <option class="option">Facultatea de Construcții</option>
@@ -10,16 +10,25 @@
     </select>
       <br>
     <label>Selectati anul Universitar:</label>
-    <select class="option-list-an">
+    <select class="option-list-an" id="optin-an">
       <option class="option">I</option>
       <option class="option">II</option>
       <option class="option">III</option>
       <option class="option">IV</option>
     </select>
-      <input type="text" id="id" name="nume" placeholder="Introduceți materia">
-      <input type="text" id="username1" name="username" placeholder="Introduceți numele profesorului">
-
-      <button type="submit">Incepe sa predai</button>
+      <br>
+      <label>Selectati numele Materiei:</label>
+      <select class="select_box" id="option-materie">
+        <option value="" disabled selected>Subject</option>
+        <option *ngFor="let name of subjectNameList" value="{{name}}">{{name}}</option>
+      </select>
+      <br>
+      <label>Selectati numele Profesorului:</label>
+      <select class="select_box" id="option-prof">
+        <option value="" disabled selected>Professor</option>
+        <option *ngFor="let prof of professorList" value="{{prof}}">{{prof}}</option>
+      </select>
+      <button type="submit" (click)="addTeach()">Incepe sa predai</button>
     </form>
   </div>
 </div>

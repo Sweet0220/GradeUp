@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj": {}
+    "F:\\GradeUP\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj": {}
   },
   "projects": {
-    "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj": {
+    "F:\\GradeUP\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
+        "projectUniqueName": "F:\\GradeUP\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
         "projectName": "GradeUp",
-        "projectPath": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
-        "packagesPath": "C:\\Users\\Mircea Nealcos\\.nuget\\packages\\",
-        "outputPath": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\obj\\",
+        "projectPath": "F:\\GradeUP\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
+        "packagesPath": "C:\\Users\\octav\\.nuget\\packages\\",
+        "outputPath": "F:\\GradeUP\\GradeUp\\Backend\\GradeUp\\GradeUp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mircea Nealcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\octav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
