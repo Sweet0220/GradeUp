@@ -3072,19 +3072,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mircea Nealcos\\.nuget\\packages\\": {}
+    "C:\\Users\\ursud\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
+      "projectUniqueName": "C:\\Facultate\\Proiecte Git\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
       "projectName": "GradeUp",
-      "projectPath": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
-      "packagesPath": "C:\\Users\\Mircea Nealcos\\.nuget\\packages\\",
-      "outputPath": "D:\\Uni\\Projects\\GradeUp\\Backend\\GradeUp\\GradeUp\\obj\\",
+      "projectPath": "C:\\Facultate\\Proiecte Git\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\GradeUp.csproj",
+      "packagesPath": "C:\\Users\\ursud\\.nuget\\packages\\",
+      "outputPath": "C:\\Facultate\\Proiecte Git\\GradeUp\\GradeUp\\Backend\\GradeUp\\GradeUp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mircea Nealcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ursud\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
